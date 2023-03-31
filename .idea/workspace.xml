@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7aadef85-cc17-47a9-884e-5c806a14d1ea" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/enca/java17workshop/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/enca/java17workshop/Exam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/enca/java17workshop/ExamResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/enca/java17workshop/ExamResultCodes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/enca/java17workshop/ExamTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/enca/java17workshop/Program.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/enca/java17workshop/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/enca/java17workshop/Tutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/enca/java17workshop/University.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/enca/java17workshop/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/enca/java17workshop/MainAppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/enca/java17workshop/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/enca/java17workshop/Course.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +111,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680294148095</updated>
-      <workItem from="1680294149379" duration="3787000" />
+      <workItem from="1680294149379" duration="4570000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1680294187219</created>
@@ -139,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680294334461</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial Commit">
+      <created>1680298031004</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680298031004</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

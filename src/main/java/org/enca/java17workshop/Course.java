@@ -1,16 +1,18 @@
 package org.enca.java17workshop;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Course {
 
-    public Course(String courseName, String isMendatory, String courseTutor, String courseDay) {
+    public Course(String courseName, String isMendatory, String courseTutor, String courseDay,Exam... exams) {
         this.courseName = courseName;
         this.isMendatory = isMendatory;
         this.courseTutor = courseTutor;
         this.courseDay = courseDay;
         this.examList=new ArrayList<Exam>();
+        this.examList.addAll(Arrays.stream(exams).toList());
     }
 
     public String getCourseName() {
