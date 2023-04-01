@@ -1,5 +1,6 @@
 package org.enca.java17workshop;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -9,23 +10,12 @@ import java.util.List;
  */
 public class MainApp
 {
-    public static void main( String[] args )
-    {
-        System.out.println( "Welcome to University Course Backend App" );
-        System.out.println( "******************************************" );
-        System.out.println( "Initializing setup..." );
-        MainApp newApp=new MainApp();
-        newApp.initializeUniSetup();
+    public static String appName="ErhanArslan University Test Automation";
+    public static String appVersion="v1.0";
+    public static List<Program> programList;
 
-    }
-    public void initializeUniSetup()
-    {
-        University newUni=new University(
-                "Marmara University",
-                "Turkey",
-                "Istanbul",
-                "Kadikoy"
-        );
+    static {
+        programList=new ArrayList<Program>();
         Program appliedAIPostGraduate=new Program(
                 "APPLIED_AI",
                 "Applied Artificial Intelligence Postgraduate Programs",
@@ -39,10 +29,31 @@ public class MainApp
                 "Computer Science",
                 new Date()
         );
+        programList.add(appliedAIPostGraduate);
+        programList.add(appliedCSEUnderGraduate);
+    }
 
-        newUni.getUniversityPrograms().add(appliedAIPostGraduate);
-        newUni.getUniversityPrograms().add(appliedCSEUnderGraduate);
-        initializeCourses(appliedCSEUnderGraduate.getCourseList());
+    public static void main( String[] args )
+    {
+        System.out.println( "Welcome to University Course Backend App" );
+        System.out.println( "******************************************" );
+        MainApp newApp=new MainApp();
+        newApp.initializeUniSetup();
+    }
+    public void initializeUniSetup()
+    {
+        System.out.println( "Initializing setup of application :"+appName+" "+appVersion );
+
+
+        University newUni=new University(
+                "Marmara University",
+                "Turkey",
+                "Istanbul",
+                "Kadikoy",
+                programList
+        );
+
+        initializeCourses(programList.get(0).getCourseList());
 
         System.out.println(newUni.toString());
 
@@ -50,13 +61,25 @@ public class MainApp
 
     public void initializeCourses(List<Course> courseList)
     {
+        Exam semiFinalExam=new Exam();
+        Exam finalExam=new Exam();
+        semiFinalExam.setExamType(ExamTypes.SemiFinal);
+        semiFinalExam.setExamCode("MathSemiFinal");
+        semiFinalExam.setExamDate(new Date());
+
+        finalExam.setExamType(ExamTypes.Final);
+        finalExam.setExamCode("MathFinal");
+        finalExam.setExamDate(new Date());
+
         Course mathForCSE=new Course(
                 "Math For CSE",
                 "Y",
                 "Erhan Arslan",
-                "Wednesday"
+                "Wednesday",
+                semiFinalExam,finalExam
         );
 
         courseList.add(mathForCSE);
     }
+
 }

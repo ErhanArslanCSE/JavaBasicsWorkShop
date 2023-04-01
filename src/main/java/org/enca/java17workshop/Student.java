@@ -63,10 +63,10 @@ public class Student {
                 '}';
     }
 
-    String studentNumber;
-    String studentName;
-    String studentSurname;
-    List<Course> courseList;
-    List<ExamResult> examResults;
+    private String studentNumber;
+    private String studentName;
+    private String studentSurname;
+    private List<Course> courseList;
+    private List<ExamResult> examResults;
 
 }

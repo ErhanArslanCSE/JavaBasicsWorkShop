@@ -14,6 +14,6 @@ public class ExamResult {
                 '}';
     }
 
-    Exam exam;
-    ExamResultCodes resultCode;
+    private Exam exam;
+    private ExamResultCodes resultCode;
 }

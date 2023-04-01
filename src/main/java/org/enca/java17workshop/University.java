@@ -5,12 +5,12 @@ import java.util.List;
 
 public class University {
 
-    public University(String universityName, String countryName, String cityName, String districtName) {
+    public University(String universityName, String countryName, String cityName, String districtName,List<Program> universityPrograms) {
         this.universityName = universityName;
         this.countryName = countryName;
         this.cityName = cityName;
         this.districtName = districtName;
-        this.universityPrograms=new ArrayList<Program>();
+        this.universityPrograms=universityPrograms;
     }
 
     public String getUniversityName() {
@@ -64,9 +64,9 @@ public class University {
                 '}';
     }
 
-    String universityName;
-    String countryName;
-    String cityName;
-    String districtName;
-    List<Program> universityPrograms;
+    private String universityName;
+    private String countryName;
+    private String cityName;
+    private String districtName;
+    private List<Program> universityPrograms;
 }

@@ -36,8 +36,8 @@ public class Exam {
                 '}';
     }
 
-    String examCode;
-    ExamTypes examType;
-    Date examDate;
+    private String examCode;
+    private ExamTypes examType;
+    private Date examDate;
 
 }

@@ -75,11 +75,11 @@ public class Program {
                 '}';
     }
 
-    String programCode;
-    String programName;
-    String programMajor;
-    Date programStartDate;
-    List<Course> courseList;
-    List<Student> studentList;
+    private String programCode;
+    private String programName;
+    private String programMajor;
+    private Date programStartDate;
+    private List<Course> courseList;
+    private List<Student> studentList;
 
 }
